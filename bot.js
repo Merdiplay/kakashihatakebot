@@ -88,7 +88,7 @@ client.on("message", async message => {
     message.reply(`${member.user.tag} has been banned by ${message.author.tag} because: ${reason}`);
   }
   
-  if(command === "purge") {
+  if(command === "delete") {
 
     const deleteCount = parseInt(args[0], 10);
     
