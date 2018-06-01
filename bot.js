@@ -69,10 +69,16 @@ client.on("message", async message => {
 
   }
   
+   if {
+            message.channel.send(`My Sharingan doesn´t know what you mean!`);
+            return;
+        }
   
-  if(command === "team7")
+  
+  if(command === "team7") {
             message.channel.send(`Team 7 consists of Naruto, Sasuke, Sakura and Me! `);
             return;
+  }
     
   if(command === "ban") {
 
