@@ -74,7 +74,7 @@ client.on("message", async message => {
             return; 
         }
   
-  else if (cmd === "nani") { 
+  else if (command === "nani") { 
             return message.channel.send("omae wa mou shindeiru");
         }
   
