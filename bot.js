@@ -69,6 +69,11 @@ client.on("message", async message => {
 
   }
   
+  
+  if(command === "team7")
+            message.channel.send(`Team 7 consists of Naruto, Sasuke, Sakura and Me! `);
+            return;
+    
   if(command === "ban") {
 
     if(!message.member.roles.some(r=>["Administrator"].includes(r.name)) )
