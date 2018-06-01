@@ -77,16 +77,18 @@ client.on("message", async message => {
   else if (command === "nani") { 
             return message.channel.send("omae wa mou shindeiru");
         }
+  
+   else if(command === "team7") {
+            message.channel.send(`Team 7 consists of Naruto, Sasuke, Sakura and Me! `);
+            return;
+  }
+  
      else {
             message.channel.send(`My Sharingan doesn´t know what you mean!`);
             return;
         }
   
   
-  if(command === "team7") {
-            message.channel.send(`Team 7 consists of Naruto, Sasuke, Sakura and Me! `);
-            return;
-  }
     
   if(command === "ban") {
 
