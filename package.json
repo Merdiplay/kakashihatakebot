@@ -2,9 +2,9 @@
   "name": "kakashibot",
   "version": "1.0.0",
   "description": "Kamui",
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
-   "start": "index.js"
+   "start": "bot.js"
   },
   "author": "Merdi",
   "license": "ISC",
