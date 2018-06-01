@@ -110,6 +110,7 @@ client.on("message", async message => {
   if(command === "delete") {
 
     const deleteCount = parseInt(args[0], 10);
+ 
     
  
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
