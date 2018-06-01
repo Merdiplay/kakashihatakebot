@@ -69,9 +69,13 @@ client.on("message", async message => {
 
   }
   
-   if {
-            message.channel.send(`My Sharingan doesn´t know what you mean!`);
-            return;
+ if (command === "hi" || command === "hello") {
+            message.channel.send(`Hello ${message.author.toString()}`);
+            return; 
+        }
+  
+  else if (cmd === "nani") { 
+            return message.channel.send("omae wa mou shindeiru");
         }
   
   
