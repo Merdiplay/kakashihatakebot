@@ -21,6 +21,10 @@ client.on("guildDelete", guild => {
   client.user.setActivity(`with his Sharingan`);
 });
 
+bot.on('message' message => {
+    message.channel.send("You mean this? ;)", {files: ["https://i.ytimg.com/vi/GibOH_OqNT4/hqdefault.jpg"]});
+});
+
 
 client.on("message", async message => {
 
