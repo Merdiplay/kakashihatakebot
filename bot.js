@@ -78,9 +78,7 @@ client.on("message", async message => {
             return message.channel.send("omae wa mou shindeiru");
         }
   
-   else if (command === "withoutMask") { 
-            return image.channel.send("https://i.ytimg.com/vi/GibOH_OqNT4/hqdefault.jpg");
-        }
+
   
    else if(command === "team7") {
             message.channel.send(`Team 7 consists of Naruto, Sasuke, Sakura and Me! `);
@@ -91,6 +89,10 @@ client.on("message", async message => {
             message.channel.send(`My Sharingan doesn´t know what you mean!`);
             return;
         }
+  
+  bot.on('withoutMask' message => {
+    message.channel.send("You mean this? ;)", {files: ["https://i.ytimg.com/vi/GibOH_OqNT4/hqdefault.jpg"]});
+});
   
     
   if(command === "ban") {
