@@ -78,6 +78,10 @@ client.on("message", async message => {
             return message.channel.send("omae wa mou shindeiru");
         }
   
+   else if (command === "withoutMask") { 
+            return image.channel.send("https://i.ytimg.com/vi/GibOH_OqNT4/hqdefault.jpg");
+        }
+  
    else if(command === "team7") {
             message.channel.send(`Team 7 consists of Naruto, Sasuke, Sakura and Me! `);
             return;
@@ -88,7 +92,6 @@ client.on("message", async message => {
             return;
         }
   
-client.on('message', msg => { if (msg.content === '!chan'){ if(msg.member.voiceChannel == "afkChannelId"){ console.log('in AFK'); }else{ console.log("not in AFK"); } } })
     
   if(command === "ban") {
 
