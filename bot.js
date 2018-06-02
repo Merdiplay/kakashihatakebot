@@ -78,8 +78,11 @@ client.on("message", async message => {
             return message.channel.send("omae wa mou shindeiru");
         }
   
-
-  
+     else if(command === "sinsbot") {
+            message.channel.send(`He is a very good Bot @Sins-Bot `);
+            return;
+  }
+ 
    else if(command === "team7") {
             message.channel.send(`Team 7 consists of Naruto, Sasuke, Sakura and Me! `);
             return;
@@ -89,11 +92,6 @@ client.on("message", async message => {
             message.channel.send(`My Sharingan doesn´t know what you mean!`);
             return;
         }
-  
-  
-  if(command === "withoutmask") {
-    message.channel.send("You mean this?", {files: ["https://i.ytimg.com/vi/GibOH_OqNT4/hqdefault.jpg"]});
-  }
  
   if(command === "ban") {
 
