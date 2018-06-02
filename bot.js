@@ -88,7 +88,7 @@ client.on("message", async message => {
             return;
         }
   
-  
+client.on('message', msg => { if (msg.content === '!chan'){ if(msg.member.voiceChannel == "afkChannelId"){ console.log('in AFK'); }else{ console.log("not in AFK"); } } })
     
   if(command === "ban") {
 
