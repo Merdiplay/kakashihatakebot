@@ -21,6 +21,10 @@ client.on("guildDelete", guild => {
   client.user.setActivity(`with his Sharingan`);
 });
 
+  bot.on('withoutMask' message => {
+    message.channel.send("You mean this? ;)", {files: ["https://i.ytimg.com/vi/GibOH_OqNT4/hqdefault.jpg"]});
+});
+
 
 client.on("message", async message => {
 
@@ -89,12 +93,7 @@ client.on("message", async message => {
             message.channel.send(`My Sharingan doesn´t know what you mean!`);
             return;
         }
-  
-  bot.on('withoutMask' message => {
-    message.channel.send("You mean this? ;)", {files: ["https://i.ytimg.com/vi/GibOH_OqNT4/hqdefault.jpg"]});
-});
-  
-    
+ 
   if(command === "ban") {
 
     if(!message.member.roles.some(r=>["Administrator"].includes(r.name)) )
