@@ -88,6 +88,17 @@ client.on("message", async message => {
             return;
   }
   
+  
+     else if(command === "help") {
+            message.author.sendMessage("${message.author.toString()} You can use:
+                                       "<hi"
+                                       "<nani"
+                                       "<sinsbot"
+                                       "<team7"
+                                       ");
+            return;
+  }
+  
      else {
             message.channel.send(`My Sharingan doesn´t know what you mean!`);
             return;
