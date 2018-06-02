@@ -90,12 +90,7 @@ client.on("message", async message => {
   
   
      else if(command === "help") {
-            message.author.sendMessage("You can use:
-                                       "<hi"
-                                       "<nani"
-                                       "<sinsbot"
-                                       "<team7"
-                                       ");
+            message.author.sendMessage("You can use:"<hi", "<nani", "<sinsbot", "<team7" ");                                     
             return;
   }
   
