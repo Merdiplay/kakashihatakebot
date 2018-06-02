@@ -92,9 +92,9 @@ client.on("message", async message => {
   
   
   if(command === "withoutmask") {
-    message.channel.send("You mean this?",{files: ["https://i.ytimg.com/vi/GibOH_OqNT4/hqdefault.jpg"]})
+    message.channel.send("You mean this?",{files: ["https://i.ytimg.com/vi/GibOH_OqNT4/hqdefault.jpg"]});
     return;
-  
+  }
  
   if(command === "ban") {
 
