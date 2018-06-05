@@ -83,6 +83,12 @@ client.on("message", async message => {
             return;
   }
  
+  else if(command === ":spongeboi:") {
+            message.channel.send("BOI");
+            return;
+  }
+  
+  
    else if(command === "team7") {
             message.channel.send(`Team 7 consists of Naruto, Sasuke, Sakura and Me! `);
             return;
