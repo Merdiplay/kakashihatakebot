@@ -124,7 +124,7 @@ client.on("message", async message => {
     message.reply(`${member.user.tag} has been banned by ${message.author.tag} because: ${reason}`);
   }
   
-  if(command === "purge") {
+  else if(command === "purge") {
     // This command removes all messages from all users in the channel, up to 100.
     
     // get the delete count, as an actual number.
