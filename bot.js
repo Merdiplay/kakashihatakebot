@@ -74,33 +74,33 @@ client.on("message", async message => {
             return; 
         }
   
-  else if (command === "nani") { 
+ if (command === "nani") { 
             return message.channel.send("omae wa mou shindeiru");
         }
   
-     else if(command === "sinsbot") {
+ if(command === "sinsbot") {
             message.channel.send(`He is a very good Bot `);
             return;
   }
  
-  else if(command === ":spongeboi:") {
+ if(command === ":spongeboi:") {
             message.channel.send("BOI");
             return;
   }
   
   
-   else if(command === "team7") {
+  if(command === "team7") {
             message.channel.send(`Team 7 consists of Naruto, Sasuke, Sakura and Me! `);
             return;
   }
   
   
-     else if(command === "help") {
+   if(command === "help") {
             message.author.sendMessage("You can use:-hi, -nani, -sinsbot, -team7");                                     
             return;
   }
   
-     else {
+     if {
             message.channel.send(`My Sharingan doesn´t know what you mean!`);
             return;
         }
