@@ -74,11 +74,11 @@ client.on("message", async message => {
             return; 
         }
   
-e if (command === "nani") { 
+ if (command === "nani") { 
             return message.channel.send("omae wa mou shindeiru");
         }
   
-e if(command === "sinsbot") {
+ if(command === "sinsbot") {
             message.channel.send(`He is a very good Bot `);
             return;
   }
