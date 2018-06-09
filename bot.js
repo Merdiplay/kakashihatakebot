@@ -105,7 +105,7 @@ else if(command === ":spongeboi:") {
             return;
   }                   
   
-     else {
+     else{
             message.channel.send(`My Sharingan doesn´t know what you mean!`);
             return;
         }
