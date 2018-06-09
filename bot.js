@@ -69,12 +69,12 @@ client.on("message", async message => {
 
   }
   
- if (command === "hi" || command === "hello") {
+ if(command === "hi" || command === "hello") {
             message.channel.send(`Hello ${message.author.toString()}`);
             return; 
         }
   
- if (command === "nani") { 
+ if(command === "nani") { 
             return message.channel.send("omae wa mou shindeiru");
         }
   
