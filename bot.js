@@ -129,7 +129,7 @@ else if(command === ":spongeboi:") {
     message.reply(`${member.user.tag} has been banned by ${message.author.tag} because: ${reason}`);
   }
   
-  else if(command === "purge") {
+  if(command === "purge") {
     // This command removes all messages from all users in the channel, up to 100.
     
     // get the delete count, as an actual number.
