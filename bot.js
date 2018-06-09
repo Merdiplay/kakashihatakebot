@@ -83,7 +83,7 @@ e if(command === "sinsbot") {
             return;
   }
  
-eif(command === ":spongeboi:") {
+if(command === "spongeboi") {
             message.channel.send("BOI");
             return;
   }
