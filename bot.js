@@ -79,7 +79,7 @@ client.on("message", async message => {
  }
   
 else if(command === "sinsbot") {
-message.channel.send(`He is a very good Bot `);
+message.channel.send(`He is a very good cock! `);
 return;
 }
  
