@@ -102,7 +102,7 @@ message.author.sendMessage("Im using my Sharingan to fuck Rabia and Hanan!");
 return;
 }                   
   
-    else{
+    if{
     message.channel.send(`My Sharingan doesn´t know what you mean!`);
     return;
          }
