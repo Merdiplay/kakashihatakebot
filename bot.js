@@ -75,7 +75,7 @@ client.on("message", async message => {
  }
   
  if(command === "nani") { 
- return message.channel.send("http://gifimage.net/nani-gif-2/");
+ return message.channel.send("http://gifimage.net/wp-content/uploads/2017/10/nani-gif-2.gif");
  }
   
 if(command === "sinsbot") {
