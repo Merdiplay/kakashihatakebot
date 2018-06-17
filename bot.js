@@ -82,12 +82,12 @@ if(command === "sinsbot") {
 message.channel.send(`He is a very good cock! `);
 return;
 }
-
-if(message.startsWith === "fuck") {
-  message.channel.send("Dont say that again");
-  return;
-}
   
+if(command === "kamui") {
+message.channel.send(`https://media1.tenor.com/images/07eb87ae016a48197c99bcf2bc3879a6/tenor.gif?itemid=7360766`);
+return;
+}
+
   
 if(command === "team7") {
 message.channel.send(`Team 7 consists of Naruto, Sasuke, Sakura and Me! `);
