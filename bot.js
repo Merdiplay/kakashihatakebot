@@ -83,7 +83,7 @@ message.channel.send(`He is a very good cock! `);
 return;
 }
   
-if(command === "kamui") {
+if(command === "forbidden-jutsu") {
 message.channel.send(`https://media1.tenor.com/images/07eb87ae016a48197c99bcf2bc3879a6/tenor.gif?itemid=7360766`);
 return;
 }
