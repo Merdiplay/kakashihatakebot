@@ -82,7 +82,9 @@ if(command === "sinsbot") {
 message.channel.send(`He is a very good cock! `);
 return;
 }
- 
+
+if(message.startsWith ("fuck")) {
+  message.channel.send("Dont use say that again")
 
   
   
