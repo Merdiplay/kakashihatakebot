@@ -84,8 +84,9 @@ return;
 }
 
 if(message.startsWith ("fuck")) {
-  message.channel.send("Dont use say that again")
-
+  message.channel.send("Dont use say that again");
+  return;
+}
   
   
 if(command === "team7") {
