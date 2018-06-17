@@ -75,7 +75,7 @@ client.on("message", async message => {
  }
   
  if(command === "nani") { 
- return message.channel.send("omae wa mou shindeiru");
+ return message.channel.send("http://gifimage.net/nani-gif-2/");
  }
   
 if(command === "sinsbot") {
