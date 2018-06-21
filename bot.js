@@ -114,6 +114,11 @@ return;
  message.channel.send("https://media.giphy.com/media/aMhiY5TgVAmVG/giphy.gif");                                     
  return;
  }
+  
+         if(command === ":Spongeboi:") {
+ message.channel.send("");                                     
+ return;
+ }
                   
   
     else{
