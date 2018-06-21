@@ -109,6 +109,11 @@ return;
  message.author.sendMessage("https://media.giphy.com/media/JogBsleaWauHe/giphy.gif");                                     
  return;
  }
+  
+       if(command === "kamui") {
+ message.author.sendMessage("https://media.giphy.com/media/aMhiY5TgVAmVG/giphy.gif");                                     
+ return;
+ }
                   
   
     else{
