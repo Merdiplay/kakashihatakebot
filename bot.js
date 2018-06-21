@@ -100,10 +100,16 @@ return;
  return;
  }
   
-if(command === "ebony") {
-message.author.sendMessage("Im using my Sharingan to fuck Rabia and Hanan!");                                     
-return;
-}                   
+   if(command === "@") {
+ message.author.sendMessage("");                                     
+ return;
+ }
+  
+     if(command === "ashamed") {
+ message.author.sendMessage("https://media.giphy.com/media/JogBsleaWauHe/giphy.gif");                                     
+ return;
+ }
+                  
   
     else{
     message.channel.send(`My Sharingan doesn´t know what you mean!`);
