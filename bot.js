@@ -101,17 +101,17 @@ return;
  }
   
    if(command === "@") {
- message.member.sendMessage("");                                     
+ message.channel.send("");                                     
  return;
  }
   
      if(command === "ashamed") {
- message.member.sendMessage("https://media.giphy.com/media/JogBsleaWauHe/giphy.gif");                                     
+ message.channel.send("https://media.giphy.com/media/JogBsleaWauHe/giphy.gif");                                     
  return;
  }
   
        if(command === "kamui") {
- message.member.sendMessage("https://media.giphy.com/media/aMhiY5TgVAmVG/giphy.gif");                                     
+ message.channel.send("https://media.giphy.com/media/aMhiY5TgVAmVG/giphy.gif");                                     
  return;
  }
                   
