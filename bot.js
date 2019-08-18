@@ -8,7 +8,7 @@ const config = require("./config.json");
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
-  client.user.setActivity(`Yeet`);
+  client.user.setActivity(`Yeet`,client.user.);
 });
 
 client.on("guildCreate", guild => {
@@ -46,6 +46,15 @@ client.on("message", async message => {
 
     message.channel.send(sayMessage);
   }
+  
+
+	if (message.content === '!ping') {
+
+		message.channel.send('Pong.');
+
+	}
+
+});
   
   if(command === "kick") {
     if(!message.member.roles.some(r=>["Administrator", "Moderator"].includes(r.name)) )
