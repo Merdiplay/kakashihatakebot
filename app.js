@@ -4,7 +4,7 @@ const client = new Discord.Client();
 const { Users, CurrencyShop } = require('./dbObjects');
 const { Op } = require('sequelize');
 const currency = new Discord.Collection();
-const PREFIX = '!';
+const PREFIX = '<';
 
 Reflect.defineProperty(currency, 'add', {
 	value: async function add(id, amount) {
