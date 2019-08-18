@@ -13,7 +13,7 @@ client.on("ready", () => {
 
 client.on("guildCreate", guild => {
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-  client.user.setActivity(`with his Sharingan`);
+  client.user.setActivity(`Yeet`);
 });
 
 client.on("guildDelete", guild => {
@@ -69,41 +69,14 @@ client.on("message", async message => {
 
   }
   
- if(command === "hi" || command === "hello") {
- message.channel.send(`Hello ${message.author.toString()}`);  
- return; 
- }
   
- if(command === "nani") { 
- return message.channel.send("http://gifimage.net/wp-content/uploads/2017/10/nani-gif-2.gif");
- }
-  
-if(command === "sinsbot") {
-message.channel.send(`He is a very good cock! `);
-return;
-}
   
 if(command === "forbidden-jutsu") {
 message.channel.send(`https://media1.tenor.com/images/07eb87ae016a48197c99bcf2bc3879a6/tenor.gif?itemid=7360766`);
 return;
 }
 
-  
-if(command === "team7") {
-message.channel.send(`Team 7 consists of Naruto, Sasuke, Sakura and Me! `);
-return;
-}
-  
-  
- if(command === "help") {
- message.author.sendMessage("You can use:-hi, -nani, -sinsbot, -team7");                                     
- return;
- }
-  
-   if(command === "@") {
- message.channel.send("");                                     
- return;
- }
+ 
   
      if(command === "ashamed") {
  message.channel.send("https://media.giphy.com/media/JogBsleaWauHe/giphy.gif");                                     
@@ -114,12 +87,7 @@ return;
  message.channel.send("https://media.giphy.com/media/aMhiY5TgVAmVG/giphy.gif");                                     
  return;
  }
-  
-         if(command === ":Spongeboi:") {
- message.channel.send("");                                     
- return;
- }
-                  
+
   
     else{
     message.channel.send(`My Sharingan doesn´t know what you mean!`);
