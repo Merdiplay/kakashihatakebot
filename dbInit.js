@@ -4,8 +4,8 @@ const sequelize = new Sequelize('database', 'username', 'password', {
 	host: 'localhost',
 	dialect: 'sqlite',
 	logging: false,
-	operatorsAliases: false,
 	storage: 'database.sqlite',
+	operatorsAliases: false,
 });
 
 const CurrencyShop = sequelize.import('models/CurrencyShop');
