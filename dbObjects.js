@@ -5,6 +5,7 @@ const sequelize = new Sequelize('database', 'username', 'password', {
 	dialect: 'sqlite',
 	logging: false,
 	storage: 'database.sqlite',
+	operatorsAliases: false,
 });
 
 const Users = sequelize.import('models/Users');
@@ -14,13 +15,13 @@ const UserItems = sequelize.import('models/UserItems');
 UserItems.belongsTo(CurrencyShop, { foreignKey: 'item_id', as: 'item' });
 
 Users.prototype.addItem = async function(item) {
-	const userItem = await UserItems.findOne({
+	const useritem = await UserItems.findOne({
 		where: { user_id: this.user_id, item_id: item.id },
 	});
 
-	if (userItem) {
-		userItem.amount += 1;
-		return userItem.save();
+	if (useritem) {
+		useritem.amount += 1;
+		return useritem.save();
 	}
 
 	return UserItems.create({ user_id: this.user_id, item_id: item.id, amount: 1 });
