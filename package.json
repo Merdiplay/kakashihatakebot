@@ -1,7 +1,7 @@
 {
-  "name": "kakashibot",
+  "name": "E-bot",
   "version": "1.0.0",
-  "description": "Kamui",
+  "description": "Yeet",
   "main": "bot.js",
   "scripts": {
    "start": "bot.js"
