@@ -106,7 +106,7 @@ client.on("message", async message => {
 
     // https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/some?
 
-    if(!message.member.roles.some(r=>["Administrator", "Moderator"].includes(r.name)) )
+    if(!message.member.roles.some(r=>["Owner", "Admin", "Moderator"].includes(r.name)) )
 
       return message.reply("Sorry, you don't have permissions to use this!");
 
