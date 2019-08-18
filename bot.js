@@ -1,7 +1,13 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
+const { Users, CurrencyShop } = require('./dbObjects');
+const { Op } = require('sequelize');
+const currency = new Discord.Collection();
 
+client.once('ready', async () => {
+	console.log(`Logged in as ${client.user.tag}!`);
+});
 
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
@@ -25,23 +31,30 @@ client.on("guildDelete", guild => {
 
 
 client.on("message", async message => {
-
-  // This event will run on every single message received, from any channel or DM.
-
-  
-
-  // It's good practice to ignore other bots. This also makes your bot ignore itself
-
-  // and not get into a spam loop (we call that "botception").
-
   if(message.author.bot) return;
+  currency.add(message.author.id, 1);
+  
+  if (!message.content.startsWith(PREFIX)) return;
+	const input = message.content.slice(PREFIX.length).trim();
+	if (!input.length) return;
+	const [, command, commandArgs] = input.match(/(\w+)\s*([\s\S]*)/);
+
+  if (command === 'balance') {
+		
+	} else if (command === 'inventory') {
+		
+	} else if (command === 'transfer') {
+		
+	} else if (command === 'buy') {
+		
+	} else if (command === 'shop') {
+		
+	} else if (command === 'leaderboard') {
+	
+	}
+});
 
   
-
-  // Also good practice to ignore any message that does not start with our prefix, 
-
-  // which is set in the configuration file.
-
   if(message.content.indexOf(config.prefix) !== 0) return;
 
   
